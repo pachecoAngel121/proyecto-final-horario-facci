@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <title>GESTION</title>
+    <link rel="shortcut icon" href="images/Logo.PNG.png" <script src="Validacion.js">
+    </script>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../Pprincipal/Paginaw.html" class="nav__title">HorariosFacci</a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../Sesion Usuarios/Sesion Usuarios.html" class="nav__links">Inicio de sesion</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Registrarse/PagRegistro.html" class="nav__links">Registrarse</a>
+                </li>
+
+                <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Gestion de Horarios</h2>
+            <div>
+                <form id="Horario" action="../INTERFAZ_FECHA_HORA/INTERFAZ_FECHA_HORA.html">
+
+                    <div id="Nombre">
+                        <h1>Nombre del usuario</h1>
+                        <input class="controls" type="text" id="nombred" placeholder="Ingrese un nombre" name="nombres" required>
+                        <span id="n-error" aria-live="assertive"></span>
+                    </div>
+
+                    <h1>Escoja la carrera</h1>
+                    <div class="select">
+                        <select name="carrera" id="carrera">
+                            <option value="0" selected disabled>Elige una opción</option>
+                            <option value="IES">Ing. en Sistemas</option>
+                            <option value="ITI">Ing. en Tecnologías de la información</option>
+                            <option value="IES">Ing. en Software</option>
+                        </select>
+
+                    </div>
+                    <span id="c-error" aria-live="assertive"></span>
+
+                    <h1>Escoja el Nivel</h1>
+                    <div class="select">
+                        <select name="nivel" id="nivel">
+                            <option value="0"selected disabled>Elige una opción</option>
+                            <option value="N1">Primer Nivel</option>
+                            <option value="N2">Segundo Nivel</option>
+                            <option value="N3">Tercer Nivel</option>
+                            <option value="N4">Cuarto Nivel</option>
+                            <option value="N5">Quinto Nivel</option>
+                            <option value="N6">Sexto Nivel</option>
+                            <option value="N7">Séptimo Nivel</option>
+                            <option value="N8">Octavo Nivel</option>
+                            <option value="N9">Noveno Nivel</option>
+                            <option value="N10">Décimo Nivel</option>
+                        </select>
+                    </div>
+                    <span id="nv-error" aria-live="assertive"></span>
+                    <h1>Escoja el paralelo</h1>
+                    <div class="select">
+                        <select name="paralelo" id="paralelo">
+                            <option value="0" selected disabled>Elige una opción</option>
+                            <option value="A">Paralelo A</option>
+                            <option value="B">Paralelo B</option>
+                            <option value="C">Paralelo C</option>
+                        </select>
+                    </div>
+                    <span id="p-error" aria-live="assertive"></span>
+                    <h1>Escoja la asignatura</h1>
+                    <div class="select">
+                        <select name="asignatura" id="asignatura">
+                            <option value="0" selected disabled>Elige una opción</option>
+                            <option value="M1" >Metodos numericos</option>
+                            <option value="M2">Gestión de base de datos</option>
+                            <option value="M3">Aplicaciones Web I</option>
+                            <option value="M4">Ingeniería de Software</option>
+                            <option value="M5">Redes del computador</option>
+                            <option value="M6">Interfaces y multimedia</option>
+                            <option value="M7">Lectura y escritura de textos académicos</option>
+                        </select>
+                    </div>
+                    <span id="a-error" aria-live="assertive"></span>
+                    <input type="submit" class="send-button" value="Siguiente">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Facci.Uleam" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/facciuleam" class="footer__icons"><img src="images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/channel/UCOferC0PjpEUegrVq8Re-TQ" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados 2022 &copy; Horarios Facci</h3>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/IcoRegistro.png">
+    <link rel="stylesheet" href="estiloss.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../Pprincipal/Paginaw.html" class="nav__title">Horarios Facci</a>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../Sesion Usuarios/Sesion Usuarios.html" class="nav__links">Inicio de sesion</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Registrarse/PagRegistro.html" class="nav__links">Registrarse</a>
+                </li>
+                <li class="nav_items">
+                    <a href="Horario.html">IR A PAGINA DEL HORARIO</a>
+
+                    <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form id="caja-registro" action="../Sesion Usuarios/Sesion Usuarios.html" method="post" name="form1">
+            <center>
+                <h4>Ingrese sus datos para registrarse</h4>
+            </center>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres" required>
+            <span id="n-error" aria-live="assertive"></span>
+
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+            <span id="a-error" aria-live="assertive"></span>
+
+            <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail" required>
+            <span id="c-error" aria-live="assertive"></span>
+
+            <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
+            <span id="p-error" aria-live="assertive"></span>
+
+            <input class="controls" type="password" name="contrasena2" id="contrasena2" placeholder="Confirmar contraseña" required>
+            <span id="p2-error" aria-live="assertive"></span>
+
+            <input class="controls" type="text" name="direccion" id="direccion" placeholder="Dirección" required>
+            <span id="d-error" aria-live="assertive"></span>
+
+            <label> <p> <input type="checkbox" id="terminos"> Estoy de acuerdo con <a href="#">Términos y Condiciones</a> </p></label>
+            <span id="t-error" aria-live="assertive"></span>
+
+            <input type="submit" class="send-button" value="Registrar">
+        </form>
+        </br>
+        </br>
+    </main>
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Facci.Uleam/" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/facciuleam" class="footer__icons"><img src="images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/channel/UCOferC0PjpEUegrVq8Re-TQ" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Horarios Facci</h3>
+        </section>
+    </footer>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+
+</html>

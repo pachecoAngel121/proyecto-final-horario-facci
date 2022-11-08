@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icono inicio.png">
+    <title>Inicio Sesión</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../Pprincipal/Paginaw.html" class="nav__title">HorariosFacci</a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../Sesion Usuarios/Sesion Usuarios.html" class="nav__links">Inicio de sesion</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Registrarse/PagRegistro.html" class="nav__links">Registrarse</a>
+                </li>
+
+                <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+    <form id="caja-login" action="../Pprincipal/Paginaw.html" method="post">
+        <h4>Inicie sesión</h4>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="E-mail" required>
+        <span id="c-error" aria-live="assertive"></span>
+
+        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
+        <span id="p-error" aria-live="assertive"></span>
+
+        <label> <p> ¿Eres nuevo por aquí? <a href="../Registrarse/PagRegistro.html"><span style="color:black;">Regístrate</span></a> </p></label>
+        <input type="submit" class="send-button" value="Iniciar sesión">
+    </form>
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Facci.Uleam/" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/facciuleam" class="footer__icons"><img src="images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; HorariosFacci</h3>
+        </section>
+    </footer>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+
+</html>

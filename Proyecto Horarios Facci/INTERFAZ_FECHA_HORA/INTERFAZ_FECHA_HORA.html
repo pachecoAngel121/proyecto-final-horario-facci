@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=h ttps://istb.edu.ec/wp-content/uploads/2019/11/87717-300x300.png>
+    <link rel="stylesheet" href="style.css">
+    <title>Nuevo_Horario</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../Pprincipal/Paginaw.html" class="nav__title">HorariosFacci</a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+
+                <li class="nav__items">
+                    <a href="../Inicio de Sesion/PagInicioSesion.html" class="nav__links">Inicio de sesion</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Registrarse/PagRegistro.html" class="nav__links">Registrarse</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Horario/horario.html" class="nav__links">HORARIO DE CLASES</a>
+                </li>
+                <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form id="caja-horario2">
+            <h4>Cree un nuevo horario</h4>
+
+            <label> <p>Seleccione los días de la actividad</p></label>
+            <label> <p>Fecha:</p></label>
+            <input class="controls" type="date" id="fecha_inicio" value="2022-06-06" min="2022-06-06">
+
+            <label> <p>Seleccione las horas</p></label>
+            <label> <p>Hora inicio</p></label>
+            <input class="controls" type="time" id="hora_inicio" name="hora_inicio">
+
+            <label> <p>Hora fin</p></label>
+            <input class="controls" type="time" id="hora_fin" name="hora_fin">
+            <span id="h-error" aria-live="assertive"></span>
+
+            <input type="submit" class="send-button" value="Generar Horario">
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Facci.Uleam/" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/facciuleam" class="footer__icons"><img src="images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/channel/UCOferC0PjpEUegrVq8Re-TQ" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Horarios Facci</h3>
+        </section>
+    </footer>
+    <script src="code.js" type="text/javascript"></script>
+</body>
+
+</html>
